@@ -28,3 +28,7 @@ def predict():
     
     result = 'Phishing URL' if prediction == 1 else 'Legitimate URL'
     return render_template('result.html', url=url, result=result)
+    # Run Flask app
+if __name__ == '__main__':
+    app.run(debug=True)
+
