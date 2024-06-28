@@ -1,0 +1,43 @@
+result_html = '''
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishDetect - Phishing Detection Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .result {
+            max-width: 500px;
+            margin: auto;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>PhishDetect - Phishing Detection Result</h1>
+    <div class="result">
+        <p>URL: {{ url }}</p>
+        <p><strong>Result:</strong> {{ result }}</p>
+    </div>
+</body>
+</html>
+'''
+
+# Save HTML templates to files
+with open('templates/index.html', 'w') as f:
+    f.write(index_html)
+
+with open('templates/result.html', 'w') as f:
+    f.write(result_html)
