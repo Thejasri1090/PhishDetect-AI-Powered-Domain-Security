@@ -1,3 +1,5 @@
+import re
+from urllib.parse import urlparse
 # Function to extract features from URL
 def extract_features(url):
     parsed_url = urlparse(url)
